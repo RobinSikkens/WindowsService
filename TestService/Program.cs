@@ -7,19 +7,21 @@ using System.Threading.Tasks;
 
 namespace TestService
 {
-    static class Program
+    /// <summary>
+    /// The program.
+    /// </summary>
+    public static class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        static void Main()
+        public static void Main()
         {
-            ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[]
+            ServiceBase[] servicesToRun = new ServiceBase[]
             {
                 new TestService()
             };
-            ServiceBase.Run(ServicesToRun);
+            ServiceBase.Run(servicesToRun);
         }
     }
 }
